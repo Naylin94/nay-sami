@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-header{
+.header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,4 +11,31 @@ header{
     text-align: center;
     padding: 10px;
     margin: 0;
+}
+.navBar{
+    background-color: rgb(226, 143, 34);
+    overflow: hidden;
+    margin: 0;
+}
+
+.navItem{
+    float: left;
+    padding: 15px;
+    background-color: rgb(226, 143, 34);
+    border-right: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.navItem1{
+    float: right;
+    padding: 15px 30px;
+    background-color: rgb(9, 141, 31);
+    border-left: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.navItem:hover{
+    background-color: rgb(9, 141, 31);
 }

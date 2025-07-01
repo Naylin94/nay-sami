@@ -12,6 +12,9 @@
     padding: 10px;
     margin: 0;
 }
+.title{
+    font-size: 35PX;
+}
 .navBar{
     background-color: rgb(226, 143, 34);
     overflow: hidden;
@@ -38,4 +41,31 @@
 
 .navItem:hover{
     background-color: rgb(9, 141, 31);
+}
+
+.body{
+    display: grid;
+    background-color: rgb(241, 252, 252);
+    grid-template-columns: 70% auto;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 1px solid rgb(179, 176, 176);
+    border-radius: 8px;
+}
+.mainBody{
+    background-color: rgb(246, 250, 227);
+    border: 1px solid rgb(179, 176, 176);
+    border-radius: 5px;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.cardBody{
+    background-color: rgb(246, 250, 227);
+    border: 1px solid rgb(179, 176, 176);
+    border-radius: 5px;
+    margin-right: 40px;
+    padding: 10px;
 }

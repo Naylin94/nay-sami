@@ -103,6 +103,11 @@
     padding: 10px;
     border-radius: 5px;
 }
+.add:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid green;
+}
 .priceAdd{
     display: flex;
     justify-content: space-between;

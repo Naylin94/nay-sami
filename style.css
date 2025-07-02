@@ -35,7 +35,7 @@
 .navItem1{
     display: none;
     float: right;
-    padding: 15px 30px;
+    /* padding: 15px 30px; */
     background-color: rgb(9, 141, 31);
     border-left: 1px solid white;
     color: white;
@@ -133,6 +133,18 @@
     .navItem1{
         display: block;
     }
+    /* shopping cart mobile view */
+    .cardBody {
+        display: none;
+    }
+
+    .navItem1:hover ~ .body .mainBody {
+        display: none;
+    }
+
+    .navItem1:hover ~ .body .cardBody {
+        display: block;
+    }  
 }
 
 @media  (max-width:720px) {

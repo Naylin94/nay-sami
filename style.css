@@ -55,6 +55,10 @@
     border-radius: 8px;
 }
 .mainBody{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
     background-color: rgb(246, 250, 227);
     border: 1px solid rgb(179, 176, 176);
     border-radius: 5px;
@@ -68,4 +72,11 @@
     border-radius: 5px;
     margin-right: 40px;
     padding: 10px;
+}
+.bodyItem{
+    border: 1px black solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
 }

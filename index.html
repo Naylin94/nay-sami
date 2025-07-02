@@ -160,27 +160,19 @@
         <div class="cardBody">
             <h3>Shopping Card</h3>
             <hr>
-            <div>####
+            <div>***Välkommen***
                 <ul id="cart-list"></ul>
-
             </div>
             <hr>
-            <h4>Tax:</h4>
-            <h3>Total:</h3>
+            <h4 id="subtotal">Subtotal: 0</h4>
+            <h4 id="tax">Tax (12%): 0</h4>
+            <hr>
+            <h3 id="total" style="color: rgb(9, 141, 31);">Total: 0</h3>
 
         </div>
     </main>
     <footer class="footer">
         <h3>SAN-copyright@2025</h3>
     </footer>
-    <script>
-        const cartList = document.getElementById('cart-list');
-
-        function addToCart(name, price) {
-            const item = document.createElement('li');
-            item.textContent = `${name} - $${price}`;
-            cartList.appendChild(item);
-            }
-    </script>
 </body>
 </html>

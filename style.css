@@ -16,13 +16,15 @@
     font-size: 35PX;
 }
 .navBar{
+    display: flex;
+    justify-content: center;
     background-color: rgb(226, 143, 34);
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
 }
 
 .navItem{
-    float: left;
+    /* float: left; */
     padding: 15px;
     background-color: rgb(226, 143, 34);
     border-right: 1px solid white;
@@ -54,6 +56,10 @@
     padding: 10px;
     border: 1px solid rgb(179, 176, 176);
     border-radius: 8px;
+}
+#cart-list {
+  list-style-type: none;
+  padding: 0;
 }
 .mainBody{
     display: grid;

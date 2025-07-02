@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="project.js"></script>
 </head>
 <body>
     <header class="header">
@@ -15,20 +16,22 @@
         </div>
     </header>
     <nav class="navBar">
-        <a class="navItem" href="#">Home</a>
+        <a class="navItem" href="#" style="border-left: 1px solid white;">Home</a>
         <a class="navItem" href="#">About Us</a>
         <a class="navItem" href="#">Ledig Jobb</a>
         <a class="navItem" href="#">Kontakt Oss</a>
-        <a class="navItem1" href="#">Card</a>
+        <a class="navItem1" href="#" style="border-right: 1px solid white">Card</a>
     </nav>
+    <!-- Main Body -->
     <main class="body">
+        <!-- for product -->
         <div class="mainBody">
             <div class="bodyItem">
                 <img src="photo/peopleLove.jpg" width="100%">
                 <h4>People Love</h4>
                 <div class="priceAdd">
-                    <h3>Price:</h3>
-                    <button class="add">ADD</button>
+                    <h3>Price: 190</h3>
+                    <button onclick="addToCart('People Love',190)" class="add">ADD</button>
                 </div>
             </div>
             <div class="bodyItem">
@@ -153,10 +156,14 @@
             </div>
 
         </div>
+        <!-- Shopping Card -->
         <div class="cardBody">
             <h3>Shopping Card</h3>
             <hr>
-            <div>#</div>
+            <div>####
+                <ul id="cart-list"></ul>
+
+            </div>
             <hr>
             <h4>Tax:</h4>
             <h3>Total:</h3>
@@ -166,5 +173,14 @@
     <footer class="footer">
         <h3>SAN-copyright@2025</h3>
     </footer>
+    <script>
+        const cartList = document.getElementById('cart-list');
+
+        function addToCart(name, price) {
+            const item = document.createElement('li');
+            item.textContent = `${name} - $${price}`;
+            cartList.appendChild(item);
+            }
+    </script>
 </body>
 </html>

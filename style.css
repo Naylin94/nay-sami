@@ -157,3 +157,28 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* cart form */
+.cartForm{
+    display: block;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.input{
+    margin-bottom: 15px;
+    width: 80%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(213, 207, 207);
+}
+.cartBottom{
+    display: block;
+    background-color: rgb(9, 141, 31);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 15px;
+}

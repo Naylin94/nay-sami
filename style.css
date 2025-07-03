@@ -44,6 +44,7 @@
 
 .navItem:hover{
     background-color: rgb(9, 141, 31);
+    color: white;
 }
 
 .body{
@@ -56,6 +57,12 @@
     padding: 10px;
     border: 1px solid rgb(179, 176, 176);
     border-radius: 8px;
+}
+.body1{ /* form  */
+    display: block;
+    max-width: 1024px;
+    margin: 20px auto;
+    padding: 20px 50px;
 }
 #cart-list {
   list-style-type: none;
@@ -166,7 +173,7 @@
     padding: 10px 0;
 }
 
-.input{
+.input{ 
     margin-bottom: 15px;
     width: 80%;
     font-size: 15px;

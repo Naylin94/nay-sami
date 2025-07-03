@@ -17,7 +17,7 @@ window.onload = function() {
     subtotal += price; 
     
     // Calculate tax and total
-    const tax = +(subtotal * 0.12).toFixed(2);  // 6% tax
+    const tax = +(subtotal * 0.12).toFixed(2);  // 12% tax
     const total = +(subtotal + tax).toFixed(2);
 
     // Update display
@@ -26,7 +26,19 @@ window.onload = function() {
     totalEl.textContent = `Total: SEK: ${total}`;
   }
   window.addToCart = addToCart; // Make it accessible globally
+
+  $('#cart-list').on('click', 'li', function() { // jQuery for remove item
+      $(this).remove();
+  });
 };
+
+
+/* $(document).ready(function() { 
+    $('#cart-list').on('click', 'li', function() { 
+        $(this).remove();
+    });
+}); */
+
 
 /* function for shopping card */
 /* const cartList = document.getElementById('cart-list');

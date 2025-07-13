@@ -20,9 +20,10 @@ window.onload = function() {
     const tax = +(subtotal * 0.12).toFixed(2);  // 12% tax
     const total = +(subtotal + tax).toFixed(2);
 
-    // Update display
+    // before add will show from html 
+    // after Update display will show from JS
     subtotalEl.textContent = `Subtotal: SEK: ${subtotal.toFixed(2)}`;
-    taxEl.textContent = `Tax (12%): SEK: ${tax}`;
+    taxEl.textContent = `moms (12%): SEK: ${tax}`;
     totalEl.textContent = `Total: SEK: ${total}`;
   }
   window.addToCart = addToCart; // Make it accessible globally

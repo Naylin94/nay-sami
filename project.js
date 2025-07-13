@@ -6,25 +6,22 @@ window.onload = function() {
   /* update tax suntotal total */
   const subtotalEl = document.getElementById('subtotal');
   const taxEl = document.getElementById('tax');
-  const totalEl = document.getElementById('total');
 
   function addToCart(name, price) {
-    const item = document.createElement('li');
+    const item = document.createElement('li'); /*  <ul id="cart-list" style="padding: 10px;"><li></li></ul> */
     item.textContent = `${name} - SEK: ${price}`;
-    cartList.appendChild(item);
+    cartList.append(item);
 
     // Update subtotal
     subtotal += price; 
     
     // Calculate tax and total
     const tax = +(subtotal * 0.12).toFixed(2);  // 12% tax
-    const total = +(subtotal + tax).toFixed(2);
 
     // before add will show from html 
-    // after Update display will show from JS
-    subtotalEl.textContent = `Subtotal: SEK: ${subtotal.toFixed(2)}`;
+    // (Update display) after add will show from JS
+    subtotalEl.textContent = `Subtotal: SEK: ${subtotal.toFixed(2)}`; // for adjust price after (.) ex: 212.368 => 212.37
     taxEl.textContent = `moms (12%): SEK: ${tax}`;
-    totalEl.textContent = `Total: SEK: ${total}`;
   }
   window.addToCart = addToCart; // Make it accessible globally
 

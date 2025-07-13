@@ -19,27 +19,22 @@
     display: flex;
     justify-content: center;
     background-color: rgb(226, 143, 34);
-    /* overflow: hidden; */
     margin: 0;
 }
 
 .navItem{
-    /* float: left; */
     padding: 15px;
-    background-color: rgb(226, 143, 34);
     border-right: 1px solid white;
     color: white;
     text-decoration: none;
 }
 
-.navItem1{
+.navItem1{ /* icon */
     display: none;
     float: right;
-    /* padding: 15px 30px; */
     background-color: rgb(9, 141, 31);
     border-left: 1px solid white;
     color: white;
-    text-decoration: none;
 }
 
 .navItem:hover{
@@ -50,15 +45,15 @@
 .body{
     display: grid;
     background-color: rgb(241, 252, 252);
-    grid-template-columns: 70% auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 70% auto; /* product & cart */
+    /* grid-template-rows: auto auto; */
     gap: 30px;
     margin: 10px 10px;
     padding: 10px;
     border: 1px solid rgb(179, 176, 176);
     border-radius: 8px;
 }
-.body1{ /* form  */
+.body1{ /* contact form  */
     display: block;
     max-width: 1024px;
     margin: 20px auto;
@@ -127,10 +122,6 @@
         display: none;
         
     }
-    .cardBody1{
-        display: block;
-        margin: 10px 10px 0 10px;
-    }
     .body{
         grid-template-columns: auto;
     }
@@ -140,6 +131,7 @@
     .navItem1{
         display: block;
     }
+    
     /* shopping cart mobile view */
     .cardBody {
         display: none;

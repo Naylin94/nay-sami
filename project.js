@@ -23,7 +23,8 @@ window.onload = function() {
     subtotalEl.textContent = `Subtotal: SEK: ${subtotal.toFixed(2)}`; // for adjust price after (.) ex: 212.368 => 212.37
     taxEl.textContent = `moms (12%): SEK: ${tax}`;
   }
-  window.addToCart = addToCart; // Make it accessible globally
+  //with event attributes can not use direct function
+  window.addToCart = addToCart; // deklarera globally scope  
 
   $('#cart-list').on('click', 'li', function() { // jQuery for remove item
       $(this).remove();
